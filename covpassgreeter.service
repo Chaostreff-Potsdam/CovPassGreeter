@@ -1,0 +1,10 @@
+[Unit]
+Description=Starts the Covpass Checker
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/
+ExecStart=/usr/bin/python3 /home/pi/covpassgreeter.py
+
+[Install]
+WantedBy=multi-user.target
